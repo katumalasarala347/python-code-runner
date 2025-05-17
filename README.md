@@ -1,6 +1,6 @@
 # 🧠 Online Code Runner
 
-A sleek and powerful code runner built using **React + Express** that allows users to write, input, and execute code (Python) with real-time output and runtime display. Perfect for coding practice and testing snippets directly in the browser.
+A sleek and powerful code runner built with **React + Express**, allowing users to write, input, and execute code in **multiple languages** with real-time output and runtime display. Perfect for coding practice, interviews, or learning.
 
 ---
 
@@ -12,19 +12,29 @@ A sleek and powerful code runner built using **React + Express** that allows use
 
 ## 📸 Preview
 
-🖼️ [App Screenshot](./Screenshot.pdf)
+🖼️ [App Screenshot (PDF)](./Screenshot.pdf)
+
+---
+
+## 💡 Supported Languages
+
+- 🐍 Python  
+- ☕ Java  
+- 📘 C  
+- 📗 C++  
+- 📙 JavaScript  
 
 ---
 
 ## 🚀 Features
 
-- ✅ Run Python Code Instantly  
+- ✅ Run code instantly in multiple languages  
 - 📥 Input (stdin) support  
-- 🎯 Clean real-time output view  
-- ⏱️ Runtime indicator  
-- 🎨 Modern, responsive dark UI  
-- 📦 Download code button  
-- ♻️ Reset editor option  
+- 📤 Real-time output display  
+- ⏱️ Runtime tracker  
+- 🎨 Dark/light UI with modern responsive design  
+- 💾 Download code button  
+- ♻️ Reset editor  
 - 🎹 Keyboard shortcut: `Ctrl + Enter` to run  
 
 ---
@@ -36,12 +46,12 @@ A sleek and powerful code runner built using **React + Express** that allows use
 - React  
 - Vite  
 - Tailwind CSS  
-- `@uiw/react-codemirror`  
+- @uiw/react-codemirror  
 
 ### 🌐 Backend
 
-- Express.js  
-- Piston API (code execution engine)  
+- Node.js + Express  
+- [Piston API](https://github.com/engineer-man/piston) (code execution engine)  
 
 ---
 
@@ -50,13 +60,17 @@ A sleek and powerful code runner built using **React + Express** that allows use
 - **Frontend:** Vercel  
 - **Backend:** Render  
 
----
-
 ## 📁 Folder Structure
 
-```bash
 /online-code-editor
 ├── client (React frontend)
 │   └── main UI & CodeMirror
 └── server (Node.js backend)
     └── Executes code via Piston API
+
+---
+
+## 🙌 Credits
+
+- [Piston API](https://github.com/engineer-man/piston) for multi-language code execution  
+- [@uiw/react-codemirror](https://github.com/uiwjs/react-codemirror) for the editor  
