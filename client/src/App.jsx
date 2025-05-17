@@ -8,6 +8,7 @@ import { cpp } from "@codemirror/lang-cpp";
 import { java } from "@codemirror/lang-java";
 import { closeBrackets, closeBracketsKeymap } from "@codemirror/autocomplete";
 import { keymap } from "@codemirror/view";
+const backendUrl = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
 
 const langs = [
   {
@@ -93,7 +94,7 @@ export default function App() {
     const startTime = Date.now();
 
     try {
-      const res = await fetch("http://localhost:5000/run", {
+      const res = await fetch("${backendUrl}/run", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ language, code, input }),
