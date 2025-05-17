@@ -94,7 +94,7 @@ export default function App() {
     const startTime = Date.now();
 
     try {
-      const res = await fetch("${backendUrl}/run", {
+      const res = await fetch(`${backendUrl}/run`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ language, code, input }),
