@@ -1,0 +1,13 @@
+# Node
+node_modules/
+.env
+
+# Vite
+dist/
+
+# Logs
+logs
+*.log
+
+# Mac
+.DS_Store
